@@ -1,0 +1,71 @@
+.card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    width: 15rem;
+    height: 600px; /* Add a fixed height in pixels */
+    display: inline-block;
+    overflow: hidden; /* Hide content that exceeds the fixed height */
+}
+
+@media (min-width: 1024px) {
+    .card {
+        width: calc(20% - 20px);
+    }
+
+    .menu {
+        display: block;
+        text-align: center;
+    }
+}
+
+@media (min-width: 1024px) {
+    .card {
+        width: calc(20% - 20px);
+        text-align: center;
+    }
+
+    .menu {
+        display: block;
+        text-align: center;
+    }
+}
+@media (max-width: 1024px) {
+    .card {
+        width: calc(40% - 20px);
+        text-align: center;
+    }
+
+    .menu {
+        display: block;
+        text-align: center;
+    }
+}
+@media (max-width: 768px) {
+    .card {
+        width: calc(100% - 20px);
+        text-align: center;
+    }
+
+    .menu {
+        display: block;
+        text-align: center;
+    }
+    .button-group {
+        display: none;
+    }
+}
+@media (min-width: 768px) {
+    .menu {
+        display: none;
+    }
+
+    .button-group {
+        text-align: center;
+    }
+
+    .button-group button {
+        margin: 5px;
+        padding: 10px 20px;
+    }
+}
