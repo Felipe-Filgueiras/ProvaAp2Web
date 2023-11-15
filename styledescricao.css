@@ -1,4 +1,3 @@
-/* Default styles for larger screens */
 body {
     margin-left: 20%;
 }
@@ -6,23 +5,22 @@ body {
 #container {
     display: flex;
     text-align: center;
+    flex-direction: row;
 }
 
 #esquerda {
-    order: 1; /* Display on the left */
-    margin-top: 200px;
+    order: 1; 
 }
 
 p {
-    order: 2; /* Display on the right */
-    margin-top: 350px;
+    order: 2; 
+    margin-top: 15%;
     max-width: 500px;
 }
 
-/* Media query for screens up to 768px */
 @media screen and (max-width: 768px) {
     #container {
-        flex-direction: column; /* Stack elements on top of each other */
+        flex-direction: column;
     }
 
     body {
@@ -32,7 +30,7 @@ p {
     #esquerda,
     p {
         margin-top: 0%;
-        order: 0; /* Reset the order for stacking */
+        order: 0; 
         max-width: 300px;
     }
 }
