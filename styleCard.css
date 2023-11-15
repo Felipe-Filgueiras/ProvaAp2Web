@@ -3,9 +3,9 @@
     padding: 10px;
     margin: 10px;
     width: 15rem;
-    height: 600px; /* Add a fixed height in pixels */
+    height: 600px; 
     display: inline-block;
-    overflow: hidden; /* Hide content that exceeds the fixed height */
+    overflow: hidden; 
 }
 
 @media (min-width: 1024px) {
